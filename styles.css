@@ -1,0 +1,151 @@
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background: #f2ebe4;
+}
+
+.container {
+  display: flex;
+  width: 40vw;
+  height: 65vh;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+}
+
+.image-container {
+  margin: 0;
+}
+
+.image-container > img {
+  width: 20vw;
+  height: 65vh;
+  object-fit: cover;
+  border-radius: 30px 0 0 30px;
+}
+
+.desc-container {
+  box-sizing: border-box;
+  background-color: #ffff;
+  height: 100%;
+  width: 20vw;
+  padding: 25px;
+  border-radius: 0 30px 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.category {
+  margin: 0;
+  font-family: "Saira", sans-serif;
+  letter-spacing: 2px;
+  line-height: 35px;
+  color: #95aabf;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Fraunces", serif;
+  font-size: x-large;
+  color: #1c232b;
+  letter-spacing: 2px;
+  line-height: 35px;
+}
+
+.price-container {
+  display: flex;
+  font-family: "Fraunces", serif;
+  font-size: xlarge;
+  color: #3c8067;
+}
+
+.price-container h5 {
+  margin-left: 20px;
+  text-decoration: line-through;
+}
+
+.product-desc {
+  font-size: medium;
+  margin: 20px 0 0 0;
+  color: #95aabf;
+}
+
+.cart-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 0;
+  height: 50px;
+  background-color: #3c8067;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cart-btn:active{
+    transform: scale(0.95); /* shrink slightly */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* reduce shadow */
+}
+
+.cart-btn:hover{
+    background-color: rgb(60, 128, 103);
+}
+
+.attribution{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f2ebe4;
+    color: #3c8067;
+    
+}
+
+@media screen and (max-width: 700px) {
+  .section {
+    height: 130vh;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 100vh;
+
+ 
+  }
+
+  .image-container > img {
+    content: url("./assets/image-product-mobile.jpg");
+    width: 80vw;
+    height: 50vh;
+    border-radius: 30px 30px 0 0;
+    object-fit: cover;
+  }
+
+  .desc-container {
+    margin-top: 0;
+    width: 80vw;
+    height: 50vh;
+    border-radius: 0 0 30px 30px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  h1{
+    font-size: medium;
+  }
+
+  .product-desc{
+    margin-top: 0;
+  }
+
+  .price-container{
+    margin: 0;
+  }
+
+}
